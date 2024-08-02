@@ -94,11 +94,15 @@ nav {
 #hero h1 {
     font-size: 48px;
     margin: 0;
+    line-height: 1.2;
+    animation: fadeIn 2s ease-in-out;
 }
 
 #hero p {
     font-size: 24px;
     margin: 10px 0 0;
+    line-height: 1.2;
+    animation: fadeIn 2s ease-in-out;
 }
 
 .movie-section {
