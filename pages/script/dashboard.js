@@ -1,12 +1,13 @@
 import{auth,signOut,onAuthStateChanged }from"./firebase.js";
 
-const userEmailDiv = document.querySelector("#user-email")
+const userEmailDiv = document.querySelector("#user-email");
+
 
 onAuthStateChanged(auth, (user) => {
     if (user) {
         console.log("onAuthStateChanged user:",user);
 
-        userEmailDiv.innertext = user.email;
+        userEmailDiv.innerHTML = user.email;
      
       const uid = user.uid;
       // ...
